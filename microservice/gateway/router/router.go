@@ -16,7 +16,6 @@ import (
 	"github.com/Muxi-X/forum-be/microservice/gateway/router/middleware"
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"     // swagger embed files
 	ginSwagger "github.com/swaggo/gin-swagger" // gin-swagger middleware

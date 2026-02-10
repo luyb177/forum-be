@@ -2,12 +2,13 @@ package service
 
 import (
 	"context"
+	"strconv"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/Muxi-X/forum-be/pkg/errno"
 	"gorm.io/gorm"
-	"strconv"
 )
 
 func (s *PostService) HandleReport(_ context.Context, req *pb.HandleReportRequest, _ *pb.Response) error {

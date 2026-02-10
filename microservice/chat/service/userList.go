@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 	"github.com/samber/lo"
 )
 

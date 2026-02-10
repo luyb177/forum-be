@@ -3,9 +3,7 @@ package client
 import (
 	pbu "github.com/Muxi-X/forum-be/microservice/user/proto"
 	"github.com/Muxi-X/forum-be/pkg/handler"
-
 	"github.com/Muxi-X/forum-be/pkg/identity"
-
 	"github.com/go-micro/plugins/v4/registry/etcd"
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
 	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"

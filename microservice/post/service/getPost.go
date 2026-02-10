@@ -2,10 +2,11 @@ package service
 
 import (
 	"context"
+	"strconv"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-	"strconv"
 )
 
 func (s *PostService) GetPost(_ context.Context, req *pb.Request, resp *pb.Post) error {

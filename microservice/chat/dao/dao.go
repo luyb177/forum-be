@@ -1,10 +1,10 @@
 package dao
 
 import (
-	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
-	"github.com/Muxi-X/forum-be/model"
 	"time"
 
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	"github.com/Muxi-X/forum-be/model"
 	"github.com/go-redis/redis"
 	"gorm.io/gorm"
 )

@@ -1,15 +1,40 @@
 run:
   timeout: 5m
   tests: true
-  skip-dirs:
-    - .idea
+
+issues:
+  exclude-dirs:
     - vendor
-  skip-files:
+    - .idea
+
+  exclude-files:
     - ".*\\.pb\\.go"
     - ".*\\.pb\\.micro\\.go"
 
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  exclude-use-default: false
+  exclude-rules: # test 里放宽
+      - path: _test\.go
+        linters:
+          - errcheck
+          - gocritic
+          - revive
+
+      # gateway handler 层允许函数偏长
+      - path: microservice/gateway/handler
+        linters:
+          - gocyclo
+          - funlen
+
+      # main.go 放宽
+      - path: main\.go
+        linters:
+          - revive
+
 output:
-  format: colored-line-number
+  formats:
+    - format: colored-line-number
 
 linters:
   enable:
@@ -68,27 +93,3 @@ linters-settings:
       - unnamedResult
       - ifElseChain
 
-issues:
-  max-issues-per-linter: 0
-  max-same-issues: 0
-
-  exclude-use-default: false
-
-  exclude-rules:
-    # test 里放宽
-    - path: _test\.go
-      linters:
-        - errcheck
-        - gocritic
-        - revive
-
-    # gateway handler 层允许函数偏长
-    - path: microservice/gateway/handler
-      linters:
-        - gocyclo
-        - funlen
-
-    # main.go 放宽
-    - path: main\.go
-      linters:
-        - revive

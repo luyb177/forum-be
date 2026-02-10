@@ -2,14 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/Muxi-X/forum-be/pkg/identity"
 	"log"
-
-	"github.com/go-micro/plugins/v4/registry/etcd"
-	"github.com/joho/godotenv"
-	"github.com/opentracing/opentracing-go"
-	micro "go-micro.dev/v4"
-	"go-micro.dev/v4/registry"
 
 	"github.com/Muxi-X/forum-be/config"
 	logger "github.com/Muxi-X/forum-be/log"
@@ -17,13 +10,17 @@ import (
 	pb "github.com/Muxi-X/forum-be/microservice/feed/proto"
 	"github.com/Muxi-X/forum-be/microservice/feed/service"
 	"github.com/Muxi-X/forum-be/pkg/handler"
+	"github.com/Muxi-X/forum-be/pkg/identity"
 	"github.com/Muxi-X/forum-be/pkg/tracer"
-
+	"github.com/go-micro/plugins/v4/registry/etcd"
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
-
 	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"
+	"github.com/joho/godotenv"
+	"github.com/opentracing/opentracing-go"
 	"github.com/spf13/viper"
 	cli "github.com/urfave/cli/v2"
+	micro "go-micro.dev/v4"
+	"go-micro.dev/v4/registry"
 )
 
 func init() {

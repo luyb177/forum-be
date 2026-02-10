@@ -8,14 +8,12 @@ import (
 	"regexp"
 	"time"
 
-	"go.uber.org/zap"
-
 	"github.com/Muxi-X/forum-be/log"
 	"github.com/Muxi-X/forum-be/microservice/gateway/handler"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-
 	"github.com/gin-gonic/gin"
 	"github.com/willf/pad"
+	"go.uber.org/zap"
 )
 
 type bodyLogWriter struct {

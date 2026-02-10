@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Muxi-X/forum-be/log"
-	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 	"strconv"
 	"time"
 
+	"github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 	"github.com/go-redis/redis"
 )
 

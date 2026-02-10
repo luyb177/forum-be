@@ -6,18 +6,15 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/Muxi-X/forum-be/client"
 	"github.com/Muxi-X/forum-be/config"
 	"github.com/Muxi-X/forum-be/log"
 	"github.com/Muxi-X/forum-be/microservice/gateway/dao"
 	"github.com/Muxi-X/forum-be/microservice/gateway/router"
 	"github.com/Muxi-X/forum-be/microservice/gateway/router/middleware"
-
-	"github.com/Muxi-X/forum-be/client"
-
+	"github.com/gin-gonic/gin"
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
 	"github.com/joho/godotenv"
-
-	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"

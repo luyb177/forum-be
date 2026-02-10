@@ -2,11 +2,11 @@ package service
 
 import (
 	"context"
+	"time"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-	"time"
-
 	"go.uber.org/zap"
 )
 

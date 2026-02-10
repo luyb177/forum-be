@@ -2,12 +2,13 @@ package service
 
 import (
 	"context"
+	"sync"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	"github.com/Muxi-X/forum-be/microservice/post/dao"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-	"sync"
 )
 
 func (s *PostService) ListMainPost(_ context.Context, req *pb.ListMainPostRequest, resp *pb.ListPostResponse) error {

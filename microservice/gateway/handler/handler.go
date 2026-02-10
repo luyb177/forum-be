@@ -3,17 +3,16 @@ package handler
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/Muxi-X/forum-be/log"
-	"github.com/Muxi-X/forum-be/microservice/gateway/util"
-	"github.com/golang/protobuf/jsonpb"
-	"github.com/golang/protobuf/proto"
 	"net/http"
 	"runtime"
 	"strconv"
 
+	"github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-
 	"github.com/gin-gonic/gin"
+	"github.com/golang/protobuf/jsonpb"
+	"github.com/golang/protobuf/proto"
 	"go.uber.org/zap"
 )
 

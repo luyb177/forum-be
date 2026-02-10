@@ -1,8 +1,9 @@
 package limiter
 
 import (
-	"golang.org/x/time/rate"
 	"time"
+
+	"golang.org/x/time/rate"
 )
 
 type LimiterManager struct {

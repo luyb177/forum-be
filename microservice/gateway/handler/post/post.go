@@ -1,10 +1,11 @@
 package post
 
 import (
+	"reflect"
+
 	"github.com/Muxi-X/forum-be/microservice/gateway/dao"
 	"github.com/Muxi-X/forum-be/microservice/gateway/handler/comment"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
-	"reflect"
 )
 
 type Api struct {

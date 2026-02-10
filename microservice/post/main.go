@@ -1,6 +1,8 @@
 package main
 
 import (
+	"log"
+
 	"github.com/Muxi-X/forum-be/config"
 	logger "github.com/Muxi-X/forum-be/log"
 	"github.com/Muxi-X/forum-be/microservice/post/dao"
@@ -9,18 +11,14 @@ import (
 	"github.com/Muxi-X/forum-be/pkg/handler"
 	"github.com/Muxi-X/forum-be/pkg/identity"
 	"github.com/Muxi-X/forum-be/pkg/tracer"
-	"log"
-
 	"github.com/go-micro/plugins/v4/registry/etcd"
+	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
+	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"
 	"github.com/joho/godotenv"
 	"github.com/opentracing/opentracing-go"
+	"github.com/spf13/viper"
 	micro "go-micro.dev/v4"
 	"go-micro.dev/v4/registry"
-
-	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
-
-	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"
-	"github.com/spf13/viper"
 )
 
 func init() {

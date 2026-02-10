@@ -3,15 +3,15 @@ package chat
 import (
 	"context"
 	"encoding/json"
+	"net/http"
+	"time"
+
+	"github.com/Muxi-X/forum-be/client"
 	"github.com/Muxi-X/forum-be/log"
 	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
 	"github.com/Muxi-X/forum-be/microservice/gateway/util"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-	"net/http"
-	"time"
-
-	"github.com/Muxi-X/forum-be/client"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	"go.uber.org/zap"

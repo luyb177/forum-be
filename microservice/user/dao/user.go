@@ -2,10 +2,11 @@ package dao
 
 import (
 	"errors"
+	"strconv"
+
 	"github.com/Muxi-X/forum-be/model"
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"gorm.io/gorm"
-	"strconv"
 )
 
 type RegisterInfo struct {

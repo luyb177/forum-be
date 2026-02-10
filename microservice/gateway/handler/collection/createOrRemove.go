@@ -2,6 +2,9 @@ package collection
 
 import (
 	"context"
+	"strconv"
+
+	"github.com/Muxi-X/forum-be/client"
 	"github.com/Muxi-X/forum-be/log"
 	pbf "github.com/Muxi-X/forum-be/microservice/feed/proto"
 	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
@@ -10,9 +13,6 @@ import (
 	"github.com/Muxi-X/forum-be/model"
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-	"strconv"
-
-	"github.com/Muxi-X/forum-be/client"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

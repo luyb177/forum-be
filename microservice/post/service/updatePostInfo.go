@@ -2,12 +2,13 @@ package service
 
 import (
 	"context"
+	"strconv"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
 	"github.com/Muxi-X/forum-be/pkg/errno"
 	"github.com/Muxi-X/forum-be/util"
 	"gorm.io/gorm"
-	"strconv"
 )
 
 func (s *PostService) UpdatePostInfo(_ context.Context, req *pb.UpdatePostInfoRequest, _ *pb.Response) error {

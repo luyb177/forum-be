@@ -2,6 +2,7 @@ package model
 
 import (
 	"context"
+
 	"github.com/segmentio/kafka-go"
 	"github.com/segmentio/kafka-go/sasl/plain"
 	"github.com/spf13/viper"

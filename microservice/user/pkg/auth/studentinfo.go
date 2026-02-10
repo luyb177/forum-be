@@ -2,7 +2,6 @@ package auth
 
 import (
 	"errors"
-	"golang.org/x/net/publicsuffix"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -11,6 +10,8 @@ import (
 	"regexp"
 	"strings"
 	"time"
+
+	"golang.org/x/net/publicsuffix"
 )
 
 type accountRequestParams struct {

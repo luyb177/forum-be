@@ -2,15 +2,14 @@ package report
 
 import (
 	"context"
+
+	"github.com/Muxi-X/forum-be/client"
 	"github.com/Muxi-X/forum-be/log"
 	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
 	"github.com/Muxi-X/forum-be/microservice/gateway/util"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-
-	"github.com/Muxi-X/forum-be/client"
-
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

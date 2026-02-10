@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	"github.com/Muxi-X/forum-be/microservice/user/dao"
 	"github.com/Muxi-X/forum-be/microservice/user/pkg/auth"

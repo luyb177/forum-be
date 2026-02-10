@@ -2,10 +2,10 @@ package model
 
 import (
 	"fmt"
-	"github.com/spf13/viper"
-	"go.uber.org/zap"
 
 	"github.com/Muxi-X/forum-be/log"
+	"github.com/spf13/viper"
+	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

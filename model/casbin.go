@@ -3,6 +3,8 @@ package model
 import (
 	"errors"
 	"fmt"
+	"strconv"
+
 	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/model"
@@ -12,7 +14,6 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
-	"strconv"
 )
 
 type Casbin struct {

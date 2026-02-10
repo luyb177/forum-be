@@ -8,7 +8,6 @@ import (
 	logger "github.com/Muxi-X/forum-be/log"
 	pb "github.com/Muxi-X/forum-be/microservice/user/proto"
 	"github.com/Muxi-X/forum-be/pkg/errno"
-
 	"github.com/google/uuid"
 )
 

@@ -2,6 +2,8 @@ package service
 
 import (
 	"context"
+	"strconv"
+
 	logger "github.com/Muxi-X/forum-be/log"
 	"github.com/Muxi-X/forum-be/microservice/post/dao"
 	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
@@ -9,7 +11,6 @@ import (
 	"github.com/Muxi-X/forum-be/pkg/errno"
 	"github.com/Muxi-X/forum-be/util"
 	"gorm.io/gorm"
-	"strconv"
 )
 
 func (s *PostService) CreateReport(_ context.Context, req *pb.CreateReportRequest, _ *pb.Response) error {
