@@ -2254,7 +2254,7 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "forum.muxixyz.com",
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
-	Title:            "forum-gateway",
+	Title:            "github.com/Muxi-X/forum-be/microservice/gateway",
 	Description:      "The gateway of forum",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,

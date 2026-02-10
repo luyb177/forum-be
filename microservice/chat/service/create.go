@@ -2,10 +2,10 @@ package service
 
 import (
 	"context"
-	"forum-chat/dao"
-	pb "forum-chat/proto"
-	logger "forum/log"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/chat/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 // Create 发送消息

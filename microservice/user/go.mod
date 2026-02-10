@@ -1,17 +1,17 @@
-module forum-user
+module github.com/Muxi-X/forum-be/microservice/user
 
-replace forum => ../../
+replace github.com/Muxi-X/forum-be => ../../
 
-replace forum-chat => ../chat
+replace github.com/Muxi-X/forum-be/microservice/chat => ../chat
 
-replace forum-post => ../post
+replace github.com/Muxi-X/forum-be/microservice/post => ../post
 
-replace forum-feed => ../feed
+replace github.com/Muxi-X/forum-be/microservice/feed => ../feed
 
 go 1.23.0
 
 require (
-	forum v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be v0.0.0-00010101000000-000000000000
 	github.com/ShiinaOrez/GoSecurity v0.0.0-20191118072239-d06064a9edd6
 	github.com/go-micro/plugins/v4/registry/etcd v1.2.0
 	github.com/go-micro/plugins/v4/registry/kubernetes v1.1.2

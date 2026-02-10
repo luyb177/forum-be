@@ -2,17 +2,17 @@ package collection
 
 import (
 	"context"
-	pbf "forum-feed/proto"
-	. "forum-gateway/handler"
-	"forum-gateway/util"
-	pb "forum-post/proto"
-	"forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/log"
+	pbf "github.com/Muxi-X/forum-be/microservice/feed/proto"
+	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 	"strconv"
 
-	"forum/client"
+	"github.com/Muxi-X/forum-be/client"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

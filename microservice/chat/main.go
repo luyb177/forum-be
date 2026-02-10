@@ -1,14 +1,14 @@
 package main
 
 import (
-	"forum-chat/dao"
-	pb "forum-chat/proto"
-	"forum-chat/service"
-	"forum/config"
-	logger "forum/log"
-	"forum/pkg/handler"
-	"forum/pkg/identity"
-	"forum/pkg/tracer"
+	"github.com/Muxi-X/forum-be/config"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/chat/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	"github.com/Muxi-X/forum-be/microservice/chat/service"
+	"github.com/Muxi-X/forum-be/pkg/handler"
+	"github.com/Muxi-X/forum-be/pkg/identity"
+	"github.com/Muxi-X/forum-be/pkg/tracer"
 	"log"
 
 	"github.com/go-micro/plugins/v4/registry/etcd"

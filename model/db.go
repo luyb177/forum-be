@@ -5,7 +5,7 @@ import (
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

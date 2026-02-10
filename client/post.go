@@ -1,10 +1,10 @@
 package client
 
 import (
-	pbp "forum-post/proto"
-	"forum/pkg/handler"
+	pbp "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/pkg/handler"
 
-	"forum/pkg/identity"
+	"github.com/Muxi-X/forum-be/pkg/identity"
 	"github.com/go-micro/plugins/v4/registry/etcd"
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
 	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"

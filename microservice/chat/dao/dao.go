@@ -1,8 +1,8 @@
 package dao
 
 import (
-	pb "forum-chat/proto"
-	"forum/model"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	"github.com/Muxi-X/forum-be/model"
 	"time"
 
 	"github.com/go-redis/redis"

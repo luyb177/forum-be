@@ -2,12 +2,12 @@ package user
 
 import (
 	"context"
-	. "forum-gateway/handler"
-	"forum-gateway/util"
-	pb "forum-user/proto"
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
+	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
+	pb "github.com/Muxi-X/forum-be/microservice/user/proto"
 
-	"forum/client"
+	"github.com/Muxi-X/forum-be/client"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"

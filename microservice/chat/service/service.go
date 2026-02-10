@@ -1,7 +1,7 @@
 package service
 
 import (
-	"forum-chat/dao"
+	"github.com/Muxi-X/forum-be/microservice/chat/dao"
 )
 
 // ChatService ... 聊天服务

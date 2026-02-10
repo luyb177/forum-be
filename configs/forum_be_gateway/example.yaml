@@ -1,4 +1,4 @@
-local_name: "forum-gateway"  # 服务名称///
+local_name: "github.com/Muxi-X/forum-be/microservice/gateway"  # 服务名称///
 tracing:
   jager: "localhost:12345"  # Jaeger 跟踪服务的地址///
 

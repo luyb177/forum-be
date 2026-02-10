@@ -2,15 +2,15 @@ package service
 
 import (
 	"context"
-	"forum-user/dao"
-	"forum-user/pkg/auth"
-	pb "forum-user/proto"
-	"forum-user/util"
-	logger "forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
-	"forum/pkg/token"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/user/dao"
+	"github.com/Muxi-X/forum-be/microservice/user/pkg/auth"
+	pb "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/microservice/user/util"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
+	"github.com/Muxi-X/forum-be/pkg/token"
 )
 
 // StudentLogin ... 登录

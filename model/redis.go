@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
 
 	"github.com/go-redis/redis"
 	"github.com/spf13/viper"

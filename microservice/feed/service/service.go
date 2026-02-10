@@ -1,15 +1,15 @@
 package service
 
 import (
-	"forum-feed/dao"
-	"forum/pkg/handler"
+	"github.com/Muxi-X/forum-be/microservice/feed/dao"
+	"github.com/Muxi-X/forum-be/pkg/handler"
 	"github.com/go-micro/plugins/v4/registry/etcd"
 	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"
 	"github.com/opentracing/opentracing-go"
 	"github.com/spf13/viper"
 	"go-micro.dev/v4/registry"
 
-	pbu "forum-user/proto"
+	pbu "github.com/Muxi-X/forum-be/microservice/user/proto"
 
 	micro "go-micro.dev/v4"
 )

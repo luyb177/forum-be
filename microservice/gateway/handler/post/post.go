@@ -1,9 +1,9 @@
 package post
 
 import (
-	"forum-gateway/dao"
-	"forum-gateway/handler/comment"
-	pb "forum-post/proto"
+	"github.com/Muxi-X/forum-be/microservice/gateway/dao"
+	"github.com/Muxi-X/forum-be/microservice/gateway/handler/comment"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
 	"reflect"
 )
 

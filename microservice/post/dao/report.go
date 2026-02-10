@@ -2,8 +2,8 @@ package dao
 
 import (
 	"errors"
-	pb "forum-post/proto"
-	"forum/pkg/constvar"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
 )
 
 type ReportModel struct {

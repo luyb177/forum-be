@@ -1,25 +1,25 @@
-module forum-gateway
+module github.com/Muxi-X/forum-be/microservice/gateway
 
-replace forum => ../../
+replace github.com/Muxi-X/forum-be => ../../
 
-replace forum-user => ../user
+replace github.com/Muxi-X/forum-be/microservice/user => ../user
 
-replace forum-chat => ../chat
+replace github.com/Muxi-X/forum-be/microservice/chat => ../chat
 
-replace forum-post => ../post
+replace github.com/Muxi-X/forum-be/microservice/post => ../post
 
-replace forum-feed => ../feed
+replace github.com/Muxi-X/forum-be/microservice/feed => ../feed
 
 go 1.23.0
 
 toolchain go1.23.3
 
 require (
-	forum v0.0.0-00010101000000-000000000000
-	forum-chat v0.0.0-00010101000000-000000000000
-	forum-feed v0.0.0-00010101000000-000000000000
-	forum-post v0.0.0-00010101000000-000000000000
-	forum-user v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/chat v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/feed v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/post v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/user v0.0.0-00010101000000-000000000000
 	github.com/gin-gonic/gin v1.10.0
 	github.com/go-micro/plugins/v4/registry/kubernetes v1.1.2
 	github.com/golang/protobuf v1.5.4

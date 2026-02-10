@@ -4,9 +4,9 @@ package service
 // import (
 // 	"time"
 //
-// 	"forum/log"
-// 	"forum-gateway/model"
-// 	m "forum/model"
+// 	"github.com/Muxi-X/forum-be/log"
+// 	"github.com/Muxi-X/forum-be/microservice/gateway/model"
+// 	m "github.com/Muxi-X/forum-be/model"
 //
 // 	"github.com/spf13/viper"
 // 	"go.uber.org/zap"

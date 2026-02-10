@@ -1,9 +1,9 @@
 package middleware
 
 import (
-	"forum-gateway/handler"
-	"forum-gateway/pkg/auth"
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/microservice/gateway/handler"
+	"github.com/Muxi-X/forum-be/microservice/gateway/pkg/auth"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 
 	"github.com/gin-gonic/gin"
 )

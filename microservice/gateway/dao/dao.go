@@ -1,9 +1,9 @@
 package dao
 
 import (
-	"forum/model"
-	"forum/pkg/limiter"
-	"forum/pkg/obfuscate"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/limiter"
+	"github.com/Muxi-X/forum-be/pkg/obfuscate"
 	"github.com/spf13/viper"
 )
 

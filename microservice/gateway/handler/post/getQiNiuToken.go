@@ -1,9 +1,9 @@
 package post
 
 import (
-	. "forum-gateway/handler"
-	"forum-gateway/util"
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
+	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
 	"github.com/gin-gonic/gin"
 	"github.com/qiniu/api.v7/v7/auth/qbox"
 	"github.com/qiniu/api.v7/v7/storage"

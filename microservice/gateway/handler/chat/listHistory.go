@@ -2,14 +2,14 @@ package chat
 
 import (
 	"context"
-	pb "forum-chat/proto"
-	. "forum-gateway/handler"
-	"forum-gateway/util"
-	"forum/log"
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 	"strconv"
 
-	"forum/client"
+	"github.com/Muxi-X/forum-be/client"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"

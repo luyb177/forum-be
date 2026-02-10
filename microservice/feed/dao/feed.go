@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"forum/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
 )
 
 type FeedModel struct {

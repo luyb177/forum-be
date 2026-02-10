@@ -1,0 +1,94 @@
+run:
+  timeout: 5m
+  tests: true
+  skip-dirs:
+    - .idea
+    - vendor
+  skip-files:
+    - ".*\\.pb\\.go"
+    - ".*\\.pb\\.micro\\.go"
+
+output:
+  format: colored-line-number
+
+linters:
+  enable:
+    # ===== 基础安全 & 正确性 =====
+    - govet
+    - errcheck
+    - staticcheck
+    - ineffassign
+    - unused
+    - typecheck
+
+    # ===== 代码质量 =====
+    - gosimple
+    - revive
+    - gocritic
+
+    # ===== import 规范 =====
+    - goimports
+    - gci
+
+linters-settings:
+  # ---------- import 分组 ----------
+  gci:
+    skip-generated: true
+    sections:
+      - standard
+      - default
+      - prefix(github.com/Muxi-X/forum-be)
+
+  goimports:
+    local-prefixes: github.com/Muxi-X/forum-be
+
+  # ---------- revive：轻量规范 ----------
+  revive:
+    confidence: 0.8
+    rules:
+      - name: var-naming
+      - name: package-comments
+        disabled: true
+      - name: line-length-limit
+        arguments: [120]
+      - name: unexported-return
+        disabled: true
+      - name: error-strings
+      - name: context-as-argument
+      - name: early-return
+
+  # ---------- gocritic：只开实用的 ----------
+  gocritic:
+    enabled-tags:
+      - performance
+      - style
+      - diagnostic
+    disabled-checks:
+      - hugeParam        # 结构体传参在 service 层很常见
+      - unnamedResult
+      - ifElseChain
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+
+  exclude-use-default: false
+
+  exclude-rules:
+    # test 里放宽
+    - path: _test\.go
+      linters:
+        - errcheck
+        - gocritic
+        - revive
+
+    # gateway handler 层允许函数偏长
+    - path: microservice/gateway/handler
+      linters:
+        - gocyclo
+        - funlen
+
+    # main.go 放宽
+    - path: main\.go
+      linters:
+        - revive

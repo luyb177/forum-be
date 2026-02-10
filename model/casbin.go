@@ -3,7 +3,7 @@ package model
 import (
 	"errors"
 	"fmt"
-	"forum/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/model"
 	gormadapter "github.com/casbin/gorm-adapter/v3"

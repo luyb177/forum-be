@@ -2,13 +2,13 @@ package service
 
 import (
 	"context"
-	"forum-feed/dao"
-	pb "forum-feed/proto"
-	"forum-user/pkg/role"
-	pbu "forum-user/proto"
-	logger "forum/log"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/feed/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/feed/proto"
+	"github.com/Muxi-X/forum-be/microservice/user/pkg/role"
+	pbu "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 // List ... feed列表

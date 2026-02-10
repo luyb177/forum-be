@@ -1,6 +1,6 @@
 package role
 
-import "forum/pkg/constvar"
+import "github.com/Muxi-X/forum-be/pkg/constvar"
 
 func Role2Domain(role string) string {
 	switch role {

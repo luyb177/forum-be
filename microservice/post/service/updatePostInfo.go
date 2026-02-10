@@ -2,10 +2,10 @@ package service
 
 import (
 	"context"
-	pb "forum-post/proto"
-	logger "forum/log"
-	"forum/pkg/errno"
-	"forum/util"
+	logger "github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/pkg/errno"
+	"github.com/Muxi-X/forum-be/util"
 	"gorm.io/gorm"
 	"strconv"
 )

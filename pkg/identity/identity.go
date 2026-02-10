@@ -35,5 +35,5 @@ func sanitize(s string) string {
 }
 
 func Prefix() string {
-	return "forum/" + getIdentity() + "/"
+	return "github.com/Muxi-X/forum-be/" + getIdentity() + "/"
 }

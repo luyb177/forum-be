@@ -1,11 +1,11 @@
 package dao
 
 import (
-	pb "forum-post/proto"
-	"forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 	"github.com/go-redis/redis"
 	"gorm.io/gorm"
 	"time"

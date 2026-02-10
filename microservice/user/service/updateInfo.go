@@ -2,11 +2,11 @@ package service
 
 import (
 	"context"
-	pb "forum-user/proto"
-	logger "forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 // UpdateInfo ... 更新用户信息

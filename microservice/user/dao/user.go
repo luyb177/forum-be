@@ -2,8 +2,8 @@ package dao
 
 import (
 	"errors"
-	"forum/model"
-	"forum/pkg/constvar"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"gorm.io/gorm"
 	"strconv"
 )

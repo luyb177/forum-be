@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	pb "forum-post/proto"
-	logger "forum/log"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 func (s *PostService) ListReport(_ context.Context, req *pb.ListReportRequest, resp *pb.ListReportResponse) error {

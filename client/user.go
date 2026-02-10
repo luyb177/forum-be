@@ -1,10 +1,10 @@
 package client
 
 import (
-	pbu "forum-user/proto"
-	"forum/pkg/handler"
+	pbu "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/pkg/handler"
 
-	"forum/pkg/identity"
+	"github.com/Muxi-X/forum-be/pkg/identity"
 
 	"github.com/go-micro/plugins/v4/registry/etcd"
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"

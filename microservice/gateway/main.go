@@ -6,13 +6,13 @@ import (
 	"net/http"
 	"time"
 
-	"forum-gateway/dao"
-	"forum-gateway/router"
-	"forum-gateway/router/middleware"
-	"forum/config"
-	"forum/log"
+	"github.com/Muxi-X/forum-be/config"
+	"github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/gateway/dao"
+	"github.com/Muxi-X/forum-be/microservice/gateway/router"
+	"github.com/Muxi-X/forum-be/microservice/gateway/router/middleware"
 
-	"forum/client"
+	"github.com/Muxi-X/forum-be/client"
 
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
 	"github.com/joho/godotenv"
@@ -32,7 +32,7 @@ func init() {
 	_ = godotenv.Load()
 }
 
-// @Title forum-gateway
+// @Title github.com/Muxi-X/forum-be/microservice/gateway
 // @Version 1.0
 // @Description The gateway of forum
 // @Host forum.muxixyz.com

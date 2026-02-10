@@ -2,11 +2,11 @@ package service
 
 import (
 	"context"
-	"forum-post/dao"
-	pb "forum-post/proto"
-	logger "forum/log"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/post/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 func (s *PostService) ListLikeByUserId(_ context.Context, req *pb.ListPostPartInfoRequest, resp *pb.ListPostPartInfoResponse) error {

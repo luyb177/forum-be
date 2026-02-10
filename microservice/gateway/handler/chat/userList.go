@@ -2,12 +2,12 @@ package chat
 
 import (
 	"context"
-	pb "forum-chat/proto"
-	. "forum-gateway/handler"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
 	"strconv"
 
-	"forum/client"
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/client"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 
 	"github.com/gin-gonic/gin"
 )

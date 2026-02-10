@@ -1,7 +1,7 @@
 package like
 
 import (
-	"forum-gateway/dao"
+	"github.com/Muxi-X/forum-be/microservice/gateway/dao"
 )
 
 type Api struct {

@@ -12,7 +12,7 @@ token 无效的情况：
 
 #### Usage
 
-Functions are in package `forum-gateway/service`
+Functions are in package `github.com/Muxi-X/forum-be/microservice/gateway/service`
 
 将 token 放入黑名单
 

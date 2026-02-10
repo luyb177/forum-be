@@ -1,16 +1,16 @@
 package main
 
 import (
-	"forum-user/dao"
-	"forum-user/pkg/auth"
-	"forum/pkg/identity"
+	"github.com/Muxi-X/forum-be/microservice/user/dao"
+	"github.com/Muxi-X/forum-be/microservice/user/pkg/auth"
+	"github.com/Muxi-X/forum-be/pkg/identity"
 
-	pb "forum-user/proto"
-	"forum-user/service"
-	"forum/config"
-	logger "forum/log"
-	"forum/pkg/handler"
-	"forum/pkg/tracer"
+	"github.com/Muxi-X/forum-be/config"
+	logger "github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/microservice/user/service"
+	"github.com/Muxi-X/forum-be/pkg/handler"
+	"github.com/Muxi-X/forum-be/pkg/tracer"
 	"log"
 
 	"github.com/go-micro/plugins/v4/registry/etcd"

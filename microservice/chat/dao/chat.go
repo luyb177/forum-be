@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	pb "forum-chat/proto"
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/chat/proto"
 	"strconv"
 	"time"
 

@@ -2,16 +2,16 @@ package feed
 
 import (
 	"context"
-	pb "forum-feed/proto"
-	. "forum-gateway/handler"
-	"forum-gateway/util"
-	"forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/feed/proto"
+	. "github.com/Muxi-X/forum-be/microservice/gateway/handler"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 	"strconv"
 
-	"forum/client"
+	"github.com/Muxi-X/forum-be/client"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "description": "The gateway of forum",
-        "title": "forum-gateway",
+        "title": "github.com/Muxi-X/forum-be/microservice/gateway",
         "contact": {},
         "version": "1.0"
     },

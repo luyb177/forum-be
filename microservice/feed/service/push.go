@@ -3,14 +3,14 @@ package service
 import (
 	"context"
 	"encoding/json"
-	"forum-user/pkg/role"
-	pbu "forum-user/proto"
-	"forum/pkg/errno"
-	"forum/util"
+	"github.com/Muxi-X/forum-be/microservice/user/pkg/role"
+	pbu "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/pkg/errno"
+	"github.com/Muxi-X/forum-be/util"
 
-	"forum-feed/dao"
-	pb "forum-feed/proto"
-	logger "forum/log"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/feed/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/feed/proto"
 )
 
 // Push ... 异步新增feed

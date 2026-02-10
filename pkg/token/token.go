@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/spf13/viper"

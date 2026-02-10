@@ -2,13 +2,13 @@ package service
 
 import (
 	"context"
-	"forum-post/dao"
-	pb "forum-post/proto"
-	logger "forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
-	"forum/util"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/post/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
+	"github.com/Muxi-X/forum-be/util"
 )
 
 func (s *PostService) CreateComment(_ context.Context, req *pb.CreateCommentRequest, resp *pb.CreateCommentResponse) error {

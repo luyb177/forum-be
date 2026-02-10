@@ -1,6 +1,6 @@
 package service
 
-import "forum-user/dao"
+import "github.com/Muxi-X/forum-be/microservice/user/dao"
 
 // UserService ... 用户服务
 type UserService struct {

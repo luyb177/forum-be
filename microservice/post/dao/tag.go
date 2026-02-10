@@ -1,8 +1,8 @@
 package dao
 
 import (
-	logger "forum/log"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 	"github.com/go-redis/redis"
 	"go.uber.org/zap"
 	"gorm.io/gorm"

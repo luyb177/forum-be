@@ -2,9 +2,9 @@ package service
 
 // import (
 // 	"encoding/json"
-// 	"forum-feed/dao"
-// 	logger "forum/log"
-// 	"forum/model"
+// 	"github.com/Muxi-X/forum-be/microservice/feed/dao"
+// 	logger "github.com/Muxi-X/forum-be/log"
+// 	"github.com/Muxi-X/forum-be/model"
 // )
 //
 // // SubServiceRun ... 写入feed数据

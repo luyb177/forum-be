@@ -1,10 +1,10 @@
 package client
 
 import (
-	pbc "forum-chat/proto"
-	"forum/pkg/handler"
+	pbc "github.com/Muxi-X/forum-be/microservice/chat/proto"
+	"github.com/Muxi-X/forum-be/pkg/handler"
 
-	"forum/pkg/identity"
+	"github.com/Muxi-X/forum-be/pkg/identity"
 	"github.com/go-micro/plugins/v4/registry/etcd"
 	"github.com/spf13/viper"
 	"go-micro.dev/v4/registry"

@@ -1,20 +1,20 @@
-module forum-post
+module github.com/Muxi-X/forum-be/microservice/post
 
-replace forum => ../../
+replace github.com/Muxi-X/forum-be => ../../
 
-replace forum-user => ../user
+replace github.com/Muxi-X/forum-be/microservice/user => ../user
 
-replace forum-chat => ../chat
+replace github.com/Muxi-X/forum-be/microservice/chat => ../chat
 
-replace forum-feed => ../feed
+replace github.com/Muxi-X/forum-be/microservice/feed => ../feed
 
 go 1.23.0
 
 toolchain go1.23.3
 
 require (
-	forum v0.0.0-00010101000000-000000000000
-	forum-user v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/user v0.0.0-00010101000000-000000000000
 	github.com/go-micro/plugins/v4/registry/etcd v1.2.0
 	github.com/go-micro/plugins/v4/registry/kubernetes v1.1.2
 	github.com/go-micro/plugins/v4/wrapper/trace/opentracing v1.2.0

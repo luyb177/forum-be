@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"forum/pkg/identity"
+	"github.com/Muxi-X/forum-be/pkg/identity"
 	"log"
 
 	"github.com/go-micro/plugins/v4/registry/etcd"
@@ -11,13 +11,13 @@ import (
 	micro "go-micro.dev/v4"
 	"go-micro.dev/v4/registry"
 
-	"forum-feed/dao"
-	pb "forum-feed/proto"
-	"forum-feed/service"
-	"forum/config"
-	logger "forum/log"
-	"forum/pkg/handler"
-	"forum/pkg/tracer"
+	"github.com/Muxi-X/forum-be/config"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/feed/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/feed/proto"
+	"github.com/Muxi-X/forum-be/microservice/feed/service"
+	"github.com/Muxi-X/forum-be/pkg/handler"
+	"github.com/Muxi-X/forum-be/pkg/tracer"
 
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
 

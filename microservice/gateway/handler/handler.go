@@ -3,15 +3,15 @@ package handler
 import (
 	"bytes"
 	"encoding/json"
-	"forum-gateway/util"
-	"forum/log"
+	"github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/gateway/util"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"net/http"
 	"runtime"
 	"strconv"
 
-	"forum/pkg/errno"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
@@ -27,7 +27,7 @@ type Response struct {
 func GetLine() string {
 	_, file, line, ok := runtime.Caller(1)
 	if !ok {
-		return "forum-gateway/handler/handler.go:30"
+		return "github.com/Muxi-X/forum-be/microservice/gateway/handler/handler.go:30"
 	}
 	return file + ":" + strconv.Itoa(line)
 }

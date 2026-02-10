@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	pb "forum-feed/proto"
-	logger "forum/log"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/feed/proto"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 func (s *FeedService) Delete(_ context.Context, req *pb.Request, _ *pb.Response) error {

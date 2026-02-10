@@ -1,25 +1,22 @@
 module github.com/Muxi-X/forum-be
 
-replace forum => ./
+replace github.com/Muxi-X/forum-be/microservice/user => ./microservice/user
 
-replace forum-user => ./microservice/user
+replace github.com/Muxi-X/forum-be/microservice/chat => ./microservice/chat
 
-replace forum-chat => ./microservice/chat
+replace github.com/Muxi-X/forum-be/microservice/post => ./microservice/post
 
-replace forum-post => ./microservice/post
-
-replace forum-feed => ./microservice/feed
+replace github.com/Muxi-X/forum-be/microservice/feed => ./microservice/feed
 
 go 1.23.0
 
 toolchain go1.24.4
 
 require (
-	forum v0.0.0-00010101000000-000000000000
-	forum-chat v0.0.0-00010101000000-000000000000
-	forum-feed v0.0.0-00010101000000-000000000000
-	forum-post v0.0.0-00010101000000-000000000000
-	forum-user v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/chat v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/feed v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/post v0.0.0-00010101000000-000000000000
+	github.com/Muxi-X/forum-be/microservice/user v0.0.0-00010101000000-000000000000
 	github.com/casbin/casbin/v2 v2.103.0
 	github.com/casbin/gorm-adapter/v3 v3.7.2
 	github.com/casbin/redis-watcher/v2 v2.2.0

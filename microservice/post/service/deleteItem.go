@@ -2,11 +2,11 @@ package service
 
 import (
 	"context"
-	pb "forum-post/proto"
-	logger "forum/log"
-	"forum/model"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/model"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 func (s *PostService) DeleteItem(_ context.Context, req *pb.DeleteItemRequest, _ *pb.Response) error {

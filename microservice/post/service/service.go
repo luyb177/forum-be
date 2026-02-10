@@ -2,20 +2,20 @@ package service
 
 import (
 	"context"
-	"forum-post/dao"
-	pb "forum-post/proto"
-	"forum-user/pkg/role"
-	logger "forum/log"
-	"forum/pkg/constvar"
-	"forum/pkg/errno"
-	"forum/pkg/handler"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/post/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/microservice/user/pkg/role"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
+	"github.com/Muxi-X/forum-be/pkg/errno"
+	"github.com/Muxi-X/forum-be/pkg/handler"
 	"sync"
 
 	_ "github.com/go-micro/plugins/v4/registry/kubernetes"
 	opentracingWrapper "github.com/go-micro/plugins/v4/wrapper/trace/opentracing"
 	"github.com/opentracing/opentracing-go"
 
-	pbu "forum-user/proto"
+	pbu "github.com/Muxi-X/forum-be/microservice/user/proto"
 
 	micro "go-micro.dev/v4"
 )

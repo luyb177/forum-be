@@ -559,7 +559,7 @@ host: forum.muxixyz.com
 info:
   contact: {}
   description: The gateway of forum
-  title: forum-gateway
+  title: github.com/Muxi-X/forum-be/microservice/gateway
   version: "1.0"
 paths:
   /auth/login/student:

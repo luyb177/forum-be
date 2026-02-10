@@ -3,7 +3,7 @@ package auth
 import (
 	"errors"
 
-	"forum-user/util"
+	"github.com/Muxi-X/forum-be/microservice/user/util"
 )
 
 type OauthTokenResponse struct {

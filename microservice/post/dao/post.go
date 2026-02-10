@@ -1,8 +1,8 @@
 package dao
 
 import (
-	pb "forum-post/proto"
-	"forum/pkg/constvar"
+	pb "github.com/Muxi-X/forum-be/microservice/post/proto"
+	"github.com/Muxi-X/forum-be/pkg/constvar"
 	"gorm.io/gorm"
 	"strconv"
 )

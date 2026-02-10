@@ -2,9 +2,9 @@ package auth
 
 import (
 	"errors"
-	"forum-gateway/service"
-	"forum/log"
-	"forum/pkg/token"
+	"github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/gateway/service"
+	"github.com/Muxi-X/forum-be/pkg/token"
 
 	"github.com/gin-gonic/gin"
 )

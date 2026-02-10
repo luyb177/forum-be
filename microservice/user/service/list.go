@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"forum-user/dao"
-	pb "forum-user/proto"
-	logger "forum/log"
-	"forum/pkg/errno"
+	logger "github.com/Muxi-X/forum-be/log"
+	"github.com/Muxi-X/forum-be/microservice/user/dao"
+	pb "github.com/Muxi-X/forum-be/microservice/user/proto"
+	"github.com/Muxi-X/forum-be/pkg/errno"
 )
 
 // List ... 获取用户列表

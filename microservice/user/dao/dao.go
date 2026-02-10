@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"forum/model"
+	"github.com/Muxi-X/forum-be/model"
 
 	"github.com/go-redis/redis"
 	"gorm.io/gorm"

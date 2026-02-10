@@ -2,7 +2,7 @@ package handler
 
 import (
 	"context"
-	logger "forum/log"
+	logger "github.com/Muxi-X/forum-be/log"
 
 	"go-micro.dev/v4/client"
 	errors "go-micro.dev/v4/errors"
